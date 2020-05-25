@@ -1,0 +1,7 @@
+language: scala
+agents:
+  datadog:
+    url: https://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=com.datadoghq&a=dd-java-agent&v=LATEST
+components:
+  - curl
+
