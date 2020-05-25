@@ -73,15 +73,13 @@ def main():
 
   components = service["components"]
 
-  if is_jvm(language):
-    agents = service["agents"]
-
   commands.append(base_image(language))
   commands.append(install_system_components(components))
 
   commands.extend(create_unprivileged_user())
 
   if is_jvm(language):
+    agents = service["agents"]
     commands.extend(jvm_agents(agents))
 
   commands.extend(add_entrypoint(language))
