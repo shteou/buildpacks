@@ -57,7 +57,15 @@ def add_entrypoint(language):
     print(f"Unsupported language: {language}")
     sys.exit(-1)
 
+def usage():
+  print("Usage:")
+  print("  buildpacks my-service.yaml")
+
 def main():
+  if len(sys.argv) < 2:
+    usage()
+    sys.exit(-1)
+
   commands = []
 
   print(f"Loading {sys.argv[1]}")
