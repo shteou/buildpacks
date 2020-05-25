@@ -5,5 +5,7 @@ agents:
   jolokia:
     url: https://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=com.jolokia&a=jolokia&v=LATEST
     parameters: host=0.0.0.0,port=8778
+  aspectjweaver:
+    url: https://repo1.maven.org/maven2/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar
 components:
   - mariadb-dev
