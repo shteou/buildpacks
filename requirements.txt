@@ -1,4 +1,4 @@
 dockerfile-api @ file:///home/stew/wd/shteou/dockerfile-api/dist/dockerfile_api-0.0.1-py3-none-any.whl
-PyYAML==5.3.1
+PyYAML==5.4
 six==1.15.0
 yamlreader==3.0.4
